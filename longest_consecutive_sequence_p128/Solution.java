@@ -31,3 +31,10 @@ public class Solution {
         return largeststreak;
     }
 }
+
+
+
+
+
+//timecomplexity=O(n^3)
+
