@@ -12,21 +12,26 @@ public class Solution2 {
         return -1;
     }
     static void move(int arr[]){
-        int i=firstzero(arr);;
-        int j=i+1;;
-         for(j=1;j<arr.length;j++){
+    
+        int i=firstzero(arr);
+        if(i==-1){
+            return;
+        }
+        int j;
+         for(j=i+1;j<arr.length;j++){
             if(arr[j]!=0){
-                i++;
+                
                 int temp=arr[i];
                 arr[i]=arr[j];
                 arr[j]=temp;
+                i++;
             }
 
 
          }
     }
     public static void main(String[] args) {
-        int arr[]={0,1,0,2,3,0,4,0,1};
+        int arr[]={0,1,0,3,12};
     
         move(arr);
         System.out.println(Arrays.toString(arr));
