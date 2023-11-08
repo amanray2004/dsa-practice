@@ -22,7 +22,7 @@ public class Solution {
         for (int i = 0; i < b; i++) {
             if (a.containsKey(i + 1)) {
                 int consecutiveOnes = a.get(i + 1) - a.get(i) - 1;
-                max = Math.max(max, consecutiveOnes);
+                max = Math.max(max, consecutiveOnes);   
             }
         }
 
